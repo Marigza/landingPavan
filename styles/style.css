@@ -518,7 +518,7 @@ h4 {
 }
 
 .about {
-  margin-top: 240px;
+  margin-top: 235px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -709,7 +709,7 @@ h4 {
 }
 
 .projects_content {
-  max-width: 1216px;
+  width: 1216px;
   margin-top: 86px;
   margin-left: 23px;
   display: flex;
@@ -844,7 +844,7 @@ h4 {
   justify-content: space-between;
   align-items: center;
   gap: 97px;
-  max-width: 1221px;
+  width: 1221px;
   margin-top: 203px;
   font-size: 1.8rem;
   color: #42446E;
