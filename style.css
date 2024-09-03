@@ -8,6 +8,10 @@
   --header-text-color: #42446E;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   color: var(--header-text-color);
   font-size: 5.8rem;
