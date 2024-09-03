@@ -1,0 +1,70 @@
+.footer_wrapper {
+  height: 145px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 42px;
+  margin-left: 20px;
+  border-top: 2px solid $main-text-color;
+  @include media-laptop {
+    margin-left: 0;
+  }
+  @include media-mobile {
+    height: 70px;
+  }
+}
+
+.footer-links {
+  display: flex;
+  gap: 52px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: $header-text-color;
+  :hover {
+      transition: all 0.3s linear;
+      color: $hover-color;
+    }
+  @include media-laptop {
+    gap: 30px;
+  }
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.colored-text_footer {
+  background: linear-gradient(90deg, #13B0F5 -2.06%, #A73FC1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.colored-text_love {
+  background: linear-gradient(90deg, #A73FC1 -2.06%, #CD22B3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.colored-text_coffee {
+  background: linear-gradient(90deg, #CD22B3 -2.06%, #E70FAA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.designed {
+  font-size: 1.8rem;
+  padding-right: 12px;
+  white-space: nowrap;
+  @include media-small-tablet {
+    font-size: 1.4rem;
+    padding-right: 0;
+  }
+  @include media-mobile {
+    white-space: wrap;
+  }
+}

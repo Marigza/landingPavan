@@ -1,0 +1,26 @@
+.header {
+  height: 60px;
+  @include media-tablet {
+    height: 140px;
+  }
+}
+
+.header_wrapper {
+  padding-right: 12px;
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include media-tablet {
+    margin: 0 auto 0;
+    padding-right: 0;
+  }
+}
+
+.logo_header {
+  height: 59px;
+  width: 97px;
+  margin: 10px 0 0 0;
+  background-image: url(/assets/logo.png);
+}
+
