@@ -1,0 +1,49 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 97px;
+  max-width: 1221px;
+  margin-top: 203px;
+  font-size: 1.8rem;
+  color: $header-text-color;
+  font-family: "DM Sans", sans-serif;
+
+  @include media-laptop {
+      max-width: 100%;
+    }
+  
+    @include media-tablet {
+      gap: 15px;
+        margin-top: 100px;
+    }
+  
+    @include media-small-tablet {
+      flex-wrap: wrap;
+    }
+}
+
+.contacts_logo {
+  margin: 0 11px 0;
+  height: 59px;
+  width: 97px;
+  background-image: url(/assets/logo_footer.png);
+}
+
+.contacts_info {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  gap: 74px;
+  white-space: nowrap;
+  :hover {
+    transition: all 0.3s linear;
+      color: $hover-color;
+  }
+  @include media-tablet {
+    gap: 15px;
+  }
+  @include media-mobile {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,130 @@
+.projects {
+  margin-top: 185px;
+  @include media-tablet {
+    margin-top: 100px;
+  }
+}
+
+.projects_content {
+  max-width: 1216px;
+  margin-top: 86px;
+  margin-left: 23px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 62px;
+  justify-content: space-between;
+  @include media-laptop {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  @include media-tablet {
+    justify-content: center;
+  }
+  @include media-small-tablet {
+    margin-top: 50px;
+    margin-left: 0;
+    row-gap: 30px;
+    justify-content: center;
+  }
+
+}
+
+.projects_item {
+  width: 373px;
+  height: 567px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
+  @include media-mobile {
+    width: 300px;
+  }
+}
+
+.item_image {
+  height: 46%;
+}
+
+.image_first {
+  background: url(/assets/backgrounds/Rectangle4.png) center no-repeat;
+}
+
+.image_second {
+  background: url(/assets/backgrounds/Rectangle6.png) center no-repeat;
+}
+
+.image_third {
+  background: url(/assets/backgrounds/Rectangle8.png) center no-repeat;
+}
+
+.image_fourth {
+  background: url(/assets/backgrounds/Rectangle12.png) center no-repeat;
+}
+
+.image_fifth {
+  background: url(/assets/backgrounds/Rectangle13.png) center no-repeat;
+}
+
+.image_sixth {
+  background: url(/assets/backgrounds/Rectangle14.png) center no-repeat;
+}
+
+.item_content {
+  padding: 25px 30px 20px 30px;
+}
+
+.item_text {
+  margin: 13px 0 0 0;
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 2.6rem;
+}
+
+.item_tags {
+  margin: 16px 0 0 0;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+.item_tags-bold {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.item_footer {
+  display: flex;
+  gap: 48px;
+  margin-top: 27px;
+  justify-content: start;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $second-text-color;
+}
+
+.link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  :hover {
+      text-decoration: none;
+    }
+}
+
+.link_icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.chain {
+  background: url(/assets/icons/link-chain.svg) center no-repeat;
+}
+
+.lint_text {
+  text-decoration: underline;
+}
+
+.github_icon {
+  background: url(/assets/icons/github-fill.svg) center no-repeat;
+}
