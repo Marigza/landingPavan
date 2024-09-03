@@ -1,0 +1,106 @@
+.stack {
+  margin-top: 300px;
+  @include media-tablet {
+    margin-top: 100px;
+  }
+}
+
+.stack_content {
+  display: grid;
+  max-width: 1250px;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 95px;
+  row-gap: 45px;
+  margin-top: 117px;
+
+  @include media-laptop {
+    max-width: 100%;
+      margin: 117px auto 0;
+      column-gap: 30px;
+      row-gap: 30px;
+      align-items: center;
+      justify-items: center;
+    }
+  
+    @include media-tablet {
+      margin: 117px auto 0;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include media-small-tablet {
+      margin: 50px auto 0;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include media-mobile {
+      margin: 10px auto 0;
+      column-gap: 15px;
+      row-gap: 15px;
+    }
+}
+
+.html {
+  margin: 24px 0 0 7px;
+  background: url(/assets/icons/html.svg) center no-repeat;
+}
+
+.css {
+  margin: 24px 0 0 7px;
+  background: url(/assets/icons/css.svg) center no-repeat;
+}
+
+.js {
+  margin: 24px 0 0 7px;
+  background: url(/assets/icons/js-official.svg) center no-repeat;
+}
+
+.react {
+  margin: 17px 0 0 7px;
+  background: url(/assets/icons/react.svg) center no-repeat;
+}
+
+.redux {
+  margin: 10px 0 0 10px;
+  background: url(/assets/icons/Vector.svg) center no-repeat;
+}
+
+.bootstrap {
+  background: url(/assets/icons/bootstrap.svg) center no-repeat;
+}
+
+.tailwind {
+  margin: 26px 0 0 14px;
+  background: url(/assets/icons/tailwind.svg) center no-repeat;
+}
+
+.sass {
+  margin: 26px 0 0 3px;
+  background: url(/assets/icons/sass.svg) center no-repeat;
+}
+
+.git {
+  margin: 16px 0 0 4px;
+  background: url(/assets/icons/git.svg) center no-repeat;
+}
+
+.greensock {
+  margin: 19px 0 0 0;
+  background: url(/assets/icons/greensock.svg) center no-repeat;
+}
+
+.vscode {
+  margin: 0 0 0 9px;
+  background: url(/assets/icons/vscode.svg) center no-repeat;
+}
+
+.github {
+  background: url(/assets/icons/github.svg) center no-repeat;
+}
+
+.stack_item {
+  width: 120px;
+  height: 120px;
+  @include media-mobile {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+  }
+}

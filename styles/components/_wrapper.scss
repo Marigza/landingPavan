@@ -1,0 +1,15 @@
+.wrapper {
+  max-width: 1209px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  color: $main-text-color;
+  @include media-laptop {
+    max-width: 1000px;
+  }
+  @include media-tablet {
+    max-width: 75%;
+  }
+  @include media-mobile {
+    max-width: 95%;
+  }
+}
