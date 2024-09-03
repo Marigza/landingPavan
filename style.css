@@ -6,6 +6,7 @@
   --main-text-color: #666666;
   --second-text-color: #000000;
   --header-text-color: #42446E;
+  --hover-color: #E70FAA;
 }
 
 html {
@@ -92,6 +93,18 @@ h4 {
   background-image: url(./assets/icons/IN.svg);
 }
 
+.gh:hover {
+  background-image: url(./assets/icons/GH-hover.svg);
+}
+
+.tw:hover {
+  background-image: url(./assets/icons/TW-hover.svg);
+}
+
+.in:hover {
+  background-image: url(./assets/icons/IN-hover.svg);
+}
+
 .portfolio-links {
   display: flex;
   gap: 54px;
@@ -102,6 +115,11 @@ h4 {
 .portfolio-links>*:nth-child(2),
 .portfolio-links>*:nth-child(3) {
   padding-left: 13px;
+}
+
+.portfolio-links>:hover {
+  transition: all 0.3s linear;
+  color: var(--hover-color);
 }
 
 .social-links {
@@ -304,6 +322,10 @@ h4 {
   align-items: center;
 }
 
+.link>:hover {
+  text-decoration: none;
+}
+
 .link_icon {
   display: inline-block;
   width: 20px;
@@ -349,6 +371,11 @@ h4 {
   white-space: nowrap;
 }
 
+.contacts_info>:hover {
+  transition: all 0.3s linear;
+  color: var(--hover-color);
+}
+
 .footer_wrapper {
   height: 145px;
   width: 100%;
@@ -368,6 +395,11 @@ h4 {
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--header-text-color);
+}
+
+.footer-links>:hover {
+  transition: all 0.3s linear;
+  color: var(--hover-color);
 }
 
 .colored-text_footer {
