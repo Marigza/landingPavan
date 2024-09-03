@@ -1,0 +1,72 @@
+.links_header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 55px;
+  @include media-tablet {
+    max-width: 450px;
+    gap: 20px;
+  }
+  @include media-small-tablet {
+    max-width: 400px;
+    justify-content: center;
+    gap: 0;
+  }
+}
+
+.social_icons {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.gh {
+  background-image: url(/assets/icons/GH.svg);
+  &:hover {
+      background-image: url(/assets/icons/GH-hover.svg);
+    }
+}
+
+.tw {
+  background-image: url(/assets/icons/TW.svg);
+  &:hover {
+      background-image: url(/assets/icons/TW-hover.svg);
+    }
+}
+
+.in {
+  background-image: url(/assets/icons/IN.svg);
+  &:hover {
+      background-image: url(/assets/icons/IN-hover.svg);
+    }
+}
+
+.portfolio-links {
+  display: flex;
+  gap: 54px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  &>:hover {
+    transition: all 0.3s linear;
+      color: $hover-color;
+  }
+  @include media-tablet {
+    gap: 10px;
+  }
+  @include media-small-tablet {
+    display: none;
+  }
+}
+
+.portfolio-links>*:nth-child(2),
+.portfolio-links>*:nth-child(3) {
+  padding-left: 13px;
+  @include media-tablet {
+    padding-left: 0;
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 19px;
+}
