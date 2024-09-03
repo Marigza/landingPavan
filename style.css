@@ -114,9 +114,10 @@ h4 {
 
 .waving-hand {
   display: inline-block;
-  width: 60px;
-  height: 60px;
-  background: url(./assets/hand.png);
+  width: 1.2em;
+  height: 1.2em;
+  background-size: contain;
+  background: url(./assets/hand.png) center no-repeat;
 }
 
 .colored-text {
@@ -341,6 +342,7 @@ h4 {
   justify-content: flex-end;
   flex-grow: 1;
   gap: 74px;
+  white-space: nowrap;
 }
 
 .footer_wrapper {
@@ -404,7 +406,10 @@ h4 {
   .stack_content {
     max-width: 100%;
     margin: 117px auto 0;
-    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    align-items: center;
+    justify-items: center;
   }
 
   .contacts {
@@ -422,30 +427,185 @@ h4 {
 
 @media screen and (max-width: 1000px) {
   .wrapper {
-    max-width: 800px;
+    max-width: 75%;
+  }
+
+  .header_wrapper {
+    margin: 0 auto 0;
+    padding-right: 0;
   }
 
   .header {
-    height: 120px;
+    height: 140px;
   }
 
   .links_header {
+    max-width: 450px;
     gap: 20px;
   }
 
+  .portfolio-links>*:nth-child(2),
+  .portfolio-links>*:nth-child(3) {
+    padding-left: 0;
+  }
+
   .portfolio-links {
-    gap: 30px;
+    gap: 10px;
+  }
+
+  .stack {
+    margin-top: 100px;
   }
 
   .stack_content {
     margin: 117px auto 0;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 60px;
-    row-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .projects {
+    margin-top: 100px;
+  }
+
+  .projects_content {
+    justify-content: center;
   }
   
   .about {
     margin-top: 70px;
     justify-content: center;
   }
+
+  .contacts {
+    gap: 15px;
+    margin-top: 100px;  
+  }
+
+  .contacts_info {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .links_header {
+    max-width: 400px;
+    justify-content: center;
+    gap: 0;
+  }
+
+  logo_header {
+    flex-grow: 1;
+  }
+
+  .about {
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 4.2rem;
+    line-height: 5.8rem;
+  }
+
+  .waving-hand {
+    width: 1.0em;
+    height: 1.0em;
+    background-size: contain;
+  }
+
+  .colored-text {
+    max-width: 400px;
+  }
+
+  .stack_content {
+    margin: 50px auto 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects_content {
+    margin-top: 50px;
+    margin-left: 0;
+    row-gap: 30px;
+    justify-content: center;
+  }
+
+  .portfolio-links {
+    display: none;
+    gap: 10px;
+  }
+
+  .contacts {
+    flex-wrap: wrap;
+  }
+
+  .designed {
+    font-size: 1.4rem;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+      max-width: 95%;
+    }
+
+  h1 {
+    font-size: 3.0rem;
+    line-height: 4.2rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    margin-top: 10px;
+  }
+
+  .colored-text {
+    max-width: 300px;
+  }
+
+ .about_photo {
+   height: 300px;
+   width: 300px;
+   background-size: contain;
+ }
+
+ .stack_content {
+   margin: 10px auto 0;
+   column-gap: 15px;
+   row-gap: 15px;
+ }
+
+ .stack_item {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+ }
+
+ .projects_item {
+   width: 300px;
+ }
+
+ h4 {
+   font-size: 1.8rem;
+ }
+
+
+ .footer_wrapper {
+   height: 70px;
+ }
+
+ .footer-links {
+   display: none;
+ }
+
+ .contacts_info {
+   flex-wrap: wrap;
+ }
+
+ .designed {
+   white-space: wrap;
+ }
 }
