@@ -100,6 +100,9 @@
   font-size: 1.6rem;
   font-weight: 400;
   color: $second-text-color;
+  @include media-mobile {
+    gap: 10px;
+  }
 }
 
 .link {
@@ -109,6 +112,9 @@
   :hover {
       text-decoration: none;
     }
+  @include media-mobile {
+    gap: 0;
+  }
 }
 
 .link_icon {

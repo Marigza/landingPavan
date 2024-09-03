@@ -37,16 +37,6 @@
     }
 }
 
-.stack_item {
-  width: 120px;
-  height: 120px;
-  @include media-mobile {
-    width: 60px;
-    height: 60px;
-    background-size: contain;
-  }
-}
-
 .html {
   margin: 24px 0 0 7px;
   background: url(/assets/icons/html.svg) center no-repeat;
@@ -103,4 +93,14 @@
 
 .github {
   background: url(/assets/icons/github.svg) center no-repeat;
+}
+
+.stack_item {
+  width: 120px;
+  height: 120px;
+  @include media-mobile {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+  }
 }
